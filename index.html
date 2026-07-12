@@ -567,9 +567,14 @@
     }
 
     .closing h2 {
-      max-width: 720px;
+      max-width: 820px;
       margin: 0 auto 18px;
-      font-size: 40px;
+      font-size: clamp(30px, 3.2vw, 38px);
+      line-height: 1.35;
+    }
+
+    .nowrap {
+      white-space: nowrap;
     }
 
     @media (max-width: 720px) {
@@ -1287,7 +1292,7 @@
     </section>
 
     <footer class="closing">
-      <h2>願這份指南，成為你育兒旅程裡溫柔的導航</h2>
+      <h2>願這份指南，成為你育兒旅程裡<span class="nowrap">溫柔的導航</span></h2>
       <p>你不需要一開始就知道所有答案。每一次餵奶、每一次抱起、每一次觀察寶寶的小變化，都會讓你更懂這個孩子，也更懂自己作為父母的力量。</p>
       <div class="notice">本指南為一般育兒資訊，不能取代醫療診斷或個別化專業建議。寶寶若有異常症狀、媽媽產後情緒長期低落或出現傷害自己與孩子的念頭，請立即尋求醫療與心理專業協助。</div>
     </footer>
