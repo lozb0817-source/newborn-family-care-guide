@@ -31,6 +31,10 @@
 
     * { box-sizing: border-box; }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background:
@@ -429,6 +433,15 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       background: rgba(255,255,255,0.62);
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .toc-row:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.82);
+      box-shadow: 0 14px 30px rgba(89,62,40,0.08);
     }
 
     .toc-row strong {
@@ -716,6 +729,30 @@
       white-space: nowrap;
     }
 
+    .top-button {
+      position: fixed;
+      right: max(20px, calc((100vw - 980px) / 2 + 20px));
+      bottom: 26px;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 1px solid rgba(234,217,189,0.95);
+      background: rgba(255,249,238,0.92);
+      color: #8b6448;
+      text-decoration: none;
+      font-weight: 900;
+      box-shadow: 0 14px 34px rgba(80,56,35,0.16);
+      backdrop-filter: blur(8px);
+    }
+
+    .top-button:hover {
+      background: #fff;
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 720px) {
       .cover,
       .page,
@@ -762,6 +799,13 @@
         white-space: normal;
       }
 
+      .top-button {
+        right: 16px;
+        bottom: 18px;
+        width: 48px;
+        height: 48px;
+      }
+
       .tr > div {
         border-right: 0;
         border-bottom: 1px solid var(--line);
@@ -773,7 +817,7 @@
 </head>
 <body>
   <main class="book">
-    <header class="cover">
+    <header class="cover" id="top">
       <div class="cover-decor" aria-hidden="true">
         <span class="deco deco-moon"></span>
         <span class="deco deco-star"></span>
@@ -849,15 +893,15 @@
         <h2>目錄</h2>
       </div>
       <div class="toc">
-        <div class="toc-row"><strong>Part 01</strong><span>迎接寶寶前的準備<em>月子安排、待產包、家庭分工與回家前確認清單</em></span><small>CH 01 + A</small></div>
-        <div class="toc-row"><strong>Part 02</strong><span>出生後第一週的照護<em>初乳、胎便、黃疸、肚臍、新生兒檢查與第一週觀察表</em></span><small>CH 02-03 + B</small></div>
-        <div class="toc-row"><strong>Part 03</strong><span>日常照顧與餵養節奏<em>哭聲安撫、抱法安全、母乳與配方奶、餵奶尿布紀錄</em></span><small>CH 04-05 + C</small></div>
-        <div class="toc-row"><strong>Part 04</strong><span>常見狀況與成長練習<em>脹氣吐奶、皮膚照護、抬頭互動，以及 0-100 天照護節奏地圖</em></span><small>CH 06-08 + D</small></div>
-        <div class="toc-row"><strong>Part 05</strong><span>睡眠、安全與爸媽支持<em>安全睡眠、外出準備、產後情緒、家庭合作、常見問答與就醫前整理</em></span><small>CH 09-12 + E</small></div>
+        <a class="toc-row" href="#chapter-1"><strong>Part 01</strong><span>迎接寶寶前的準備<em>月子安排、待產包、家庭分工與回家前確認清單</em></span><small>CH 01 + A</small></a>
+        <a class="toc-row" href="#chapter-2"><strong>Part 02</strong><span>出生後第一週的照護<em>初乳、胎便、黃疸、肚臍、新生兒檢查與第一週觀察表</em></span><small>CH 02-03 + B</small></a>
+        <a class="toc-row" href="#chapter-4"><strong>Part 03</strong><span>日常照顧與餵養節奏<em>哭聲安撫、抱法安全、母乳與配方奶、餵奶尿布紀錄</em></span><small>CH 04-05 + C</small></a>
+        <a class="toc-row" href="#chapter-6"><strong>Part 04</strong><span>常見狀況與成長練習<em>脹氣吐奶、皮膚照護、抬頭互動，以及 0-100 天照護節奏地圖</em></span><small>CH 06-08 + D</small></a>
+        <a class="toc-row" href="#chapter-9"><strong>Part 05</strong><span>睡眠、安全與爸媽支持<em>安全睡眠、外出準備、產後情緒、家庭合作、常見問答與就醫前整理</em></span><small>CH 09-12 + E</small></a>
       </div>
     </section>
 
-    <section class="page green">
+    <section class="page green" id="chapter-1">
       <span class="kicker">Chapter 01</span>
       <div class="chapter-title">
         <div class="chapter-no">1</div>
@@ -969,7 +1013,7 @@
       </div>
     </section>
 
-    <section class="page">
+    <section class="page" id="chapter-2">
       <span class="kicker">Chapter 02</span>
       <div class="chapter-title">
         <div class="chapter-no">2</div>
@@ -1075,7 +1119,7 @@
       <div class="notice">若寶寶發燒、呼吸費力、嘴唇發紫、喝奶明顯變差、活動力下降、持續嘔吐、抽搐，或爸媽直覺覺得不對勁，請不要等待，立即聯絡醫療單位。</div>
     </section>
 
-    <section class="page">
+    <section class="page" id="chapter-4">
       <span class="kicker">Chapter 04</span>
       <div class="chapter-title">
         <div class="chapter-no">4</div>
@@ -1195,7 +1239,7 @@
       </div>
     </section>
 
-    <section class="page">
+    <section class="page" id="chapter-6">
       <span class="kicker">Chapter 06</span>
       <div class="chapter-title">
         <div class="chapter-no">6</div>
@@ -1362,7 +1406,7 @@
       <div class="notice">每個寶寶的速度不同。這張表是方向，不是考卷；如果寶寶精神、吃奶、尿布或成長狀況讓你擔心，請優先詢問醫護人員。</div>
     </section>
 
-    <section class="page">
+    <section class="page" id="chapter-9">
       <span class="kicker">Chapter 09</span>
       <div class="chapter-title">
         <div class="chapter-no">9</div>
@@ -1583,5 +1627,6 @@
       <div class="notice">本指南為一般育兒資訊，不能取代醫療診斷或個別化專業建議。寶寶若有異常症狀、媽媽產後情緒長期低落或出現傷害自己與孩子的念頭，請立即尋求醫療與心理專業協助。</div>
     </footer>
   </main>
+  <a class="top-button" href="#top" aria-label="回到最上方">TOP</a>
 </body>
 </html>
