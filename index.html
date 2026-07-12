@@ -151,10 +151,11 @@
     }
 
     .deco-star {
-      width: 42px;
-      height: 42px;
-      left: 11%;
-      bottom: 21%;
+      width: 34px;
+      height: 34px;
+      left: 7%;
+      bottom: 10%;
+      opacity: 0.36;
       background:
         linear-gradient(45deg, transparent 40%, #deb764 41% 58%, transparent 59%),
         linear-gradient(-45deg, transparent 40%, #deb764 41% 58%, transparent 59%);
@@ -186,40 +187,6 @@
       left: -1px;
       transform: rotate(45deg);
       transform-origin: 100% 100%;
-    }
-
-    .deco-bottle {
-      width: 36px;
-      height: 78px;
-      left: 23%;
-      top: 18%;
-      border-radius: 11px 11px 15px 15px;
-      border: 3px solid rgba(123,86,59,0.28);
-      background: rgba(255,255,255,0.58);
-      transform: rotate(-8deg);
-    }
-
-    .deco-bottle::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 14px;
-      left: 6px;
-      top: -16px;
-      border-radius: 8px 8px 3px 3px;
-      background: #c8d6b8;
-      border: 3px solid rgba(123,86,59,0.22);
-    }
-
-    .deco-bottle::after {
-      content: "";
-      position: absolute;
-      left: 8px;
-      top: 20px;
-      width: 16px;
-      height: 3px;
-      background: rgba(222,183,100,0.62);
-      box-shadow: 0 13px 0 rgba(222,183,100,0.46), 0 26px 0 rgba(222,183,100,0.32);
     }
 
     .eyebrow {
@@ -409,31 +376,6 @@
       gap: 18px;
       align-items: start;
       margin-bottom: 28px;
-    }
-
-    .chapter-title::after {
-      content: "安心筆記";
-      position: absolute;
-      right: 0;
-      top: -8px;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.68);
-      border: 1px solid rgba(234,217,189,0.92);
-      color: #8b6448;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      transform: rotate(2deg);
-      box-shadow: 0 12px 28px rgba(89,62,40,0.08);
-    }
-
-    .page:nth-of-type(3n+1) .chapter-title::after { content: "溫柔提醒"; background: #fff0e6; }
-    .page:nth-of-type(3n+2) .chapter-title::after { content: "觀察重點"; background: #eef8fb; }
-    .page:nth-of-type(3n) .chapter-title::after { content: "照護清單"; background: #eef6e9; }
-
-    .chapter-title h2 {
-      padding-right: 130px;
     }
 
     .chapter-no {
@@ -773,17 +715,6 @@
       h1 { font-size: 43px; }
       h2 { font-size: 30px; }
 
-      .chapter-title::after {
-        position: static;
-        width: fit-content;
-        grid-column: 1;
-        margin-top: 4px;
-      }
-
-      .chapter-title h2 {
-        padding-right: 0;
-      }
-
       .cover-points,
       .grid,
       .checklist {
@@ -815,7 +746,6 @@
         <span class="deco deco-moon"></span>
         <span class="deco deco-star"></span>
         <span class="deco deco-heart"></span>
-        <span class="deco deco-bottle"></span>
       </div>
       <div>
         <span class="eyebrow">迎接新生命的安心照護手冊</span>
