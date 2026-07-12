@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新生兒家庭照護指南</title>
+  <meta name="description" content="給迎接新生命的家庭：待產準備、新生兒健康觀察、餵奶、睡眠、皮膚照護、產後情緒與家庭分工的完整照護指南。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="新生兒家庭照護指南">
+  <meta property="og:description" content="一份溫暖實用的新生兒照護手冊，陪伴家庭整理待產、餵奶、健康觀察、睡眠與產後照顧重點。">
+  <meta property="og:image" content="/assets/family.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="新生兒家庭照護指南">
+  <meta name="twitter:description" content="待產準備、新生兒照護、餵奶睡眠與家庭分工，一次整理成好讀的線上指南。">
+  <meta name="theme-color" content="#fff9ee">
+  <style>
+    :root {
+      --paper: #fff9ee;
+      --ink: #3c332b;
+      --muted: #74685d;
+      --line: #ead9bd;
+      --cream: #fff1d8;
+      --peach: #f2b28f;
+      --sage: #c8d6b8;
+      --mint: #dce8d2;
+      --sky: #c7dbe5;
+      --gold: #deb764;
+      --rose: #f6d4c4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f2e5d2;
+      color: var(--ink);
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      line-height: 1.82;
+    }
+
+    .book {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 24px 80px rgba(80, 56, 35, 0.12);
+      overflow: hidden;
+    }
+
+    .cover {
+      min-height: 760px;
+      padding: 78px 74px;
+      display: grid;
+      align-items: center;
+      position: relative;
+      background:
+        radial-gradient(circle at 14% 16%, rgba(242, 178, 143, 0.46), transparent 24%),
+        radial-gradient(circle at 82% 18%, rgba(199, 219, 229, 0.82), transparent 23%),
+        radial-gradient(circle at 72% 88%, rgba(200, 214, 184, 0.78), transparent 26%),
+        linear-gradient(140deg, #fff9ee 0%, #f7e2c8 100%);
+    }
+
+    .cover::before {
+      content: "";
+      position: absolute;
+      inset: 34px;
+      opacity: 0.34;
+      background:
+        radial-gradient(circle at 18% 76%, #fff 0 12px, transparent 13px),
+        radial-gradient(circle at 26% 83%, var(--gold) 0 7px, transparent 8px),
+        radial-gradient(circle at 70% 30%, #fff 0 11px, transparent 12px),
+        radial-gradient(circle at 88% 58%, var(--sage) 0 9px, transparent 10px),
+        linear-gradient(45deg, transparent 8%, rgba(255,255,255,0.8) 8% 10%, transparent 10% 100%);
+      pointer-events: none;
+    }
+
+    .cover-art {
+      position: absolute;
+      right: 70px;
+      bottom: 76px;
+      width: 300px;
+      height: 300px;
+      border-radius: 42% 58% 46% 54%;
+      background:
+        radial-gradient(circle at 50% 34%, #f6d2be 0 15%, transparent 16%),
+        radial-gradient(circle at 50% 51%, #d9bea1 0 25%, transparent 26%),
+        radial-gradient(circle at 48% 70%, #c8d6b8 0 31%, transparent 32%),
+        #fff2dc;
+      border: 3px solid rgba(255,255,255,0.72);
+    }
+
+    .cover-art::before,
+    .cover-art::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(234,217,189,0.9);
+    }
+
+    .cover-art::before {
+      width: 82px;
+      height: 82px;
+      left: -24px;
+      top: 56px;
+    }
+
+    .cover-art::after {
+      width: 56px;
+      height: 56px;
+      right: 16px;
+      top: -18px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      width: fit-content;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.72);
+      color: #805f49;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    h1 {
+      max-width: 610px;
+      margin: 28px 0 20px;
+      font-size: 70px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 565px;
+      font-size: 22px;
+      color: var(--muted);
+    }
+
+    .cover-points {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 230px));
+      gap: 12px;
+      margin-top: 42px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cover-points li {
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(234,217,189,0.95);
+      font-weight: 700;
+    }
+
+    .page {
+      padding: 64px 74px;
+      border-top: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 9% 14%, rgba(255,255,255,0.72) 0 34px, transparent 35px),
+        radial-gradient(circle at 93% 16%, rgba(222,183,100,0.16) 0 72px, transparent 73px),
+        radial-gradient(circle at 12% 88%, rgba(199,219,229,0.28) 0 92px, transparent 93px),
+        linear-gradient(135deg, rgba(255,249,238,0.98), rgba(255,249,238,0.98));
+    }
+
+    .page > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 34px;
+      width: 148px;
+      height: 92px;
+      opacity: 0.42;
+      background:
+        radial-gradient(circle at 28px 54px, #fff 0 27px, transparent 28px),
+        radial-gradient(circle at 62px 38px, #fff 0 34px, transparent 35px),
+        radial-gradient(circle at 98px 55px, #fff 0 30px, transparent 31px),
+        radial-gradient(circle at 122px 64px, #fff 0 22px, transparent 23px);
+      filter: drop-shadow(0 10px 18px rgba(96, 68, 45, 0.08));
+      pointer-events: none;
+    }
+
+    .page::after {
+      content: "";
+      position: absolute;
+      left: 28px;
+      bottom: 24px;
+      width: 156px;
+      height: 156px;
+      opacity: 0.34;
+      background:
+        radial-gradient(circle at 50% 50%, transparent 0 32px, var(--peach) 33px 38px, transparent 39px),
+        radial-gradient(circle at 50% 50%, var(--sage) 0 10px, transparent 11px),
+        radial-gradient(circle at 23% 27%, var(--gold) 0 8px, transparent 9px),
+        radial-gradient(circle at 78% 31%, var(--sky) 0 8px, transparent 9px),
+        radial-gradient(circle at 27% 75%, var(--rose) 0 8px, transparent 9px),
+        radial-gradient(circle at 74% 76%, var(--mint) 0 8px, transparent 9px);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .page.tint {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255,255,255,0.82) 0 38px, transparent 39px),
+        radial-gradient(circle at 88% 10%, rgba(242,178,143,0.24) 0 92px, transparent 93px),
+        radial-gradient(circle at 82% 86%, rgba(200,214,184,0.28) 0 120px, transparent 121px),
+        linear-gradient(135deg, #fff2df 0%, #fff7eb 100%);
+    }
+
+    .page.green {
+      background:
+        radial-gradient(circle at 9% 20%, rgba(255,255,255,0.8) 0 40px, transparent 41px),
+        radial-gradient(circle at 91% 18%, rgba(199,219,229,0.3) 0 96px, transparent 97px),
+        radial-gradient(circle at 18% 88%, rgba(222,183,100,0.16) 0 112px, transparent 113px),
+        linear-gradient(135deg, #f1f7eb 0%, #fff8eb 100%);
+    }
+
+    .page:nth-of-type(2n)::before {
+      left: 34px;
+      right: auto;
+      transform: scale(0.86);
+    }
+
+    .page:nth-of-type(2n)::after {
+      left: auto;
+      right: 30px;
+      background:
+        linear-gradient(45deg, transparent 36%, rgba(222,183,100,0.72) 37% 43%, transparent 44%),
+        linear-gradient(-45deg, transparent 36%, rgba(222,183,100,0.72) 37% 43%, transparent 44%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.92) 0 28px, transparent 29px);
+      border-radius: 18px;
+      transform: rotate(8deg);
+    }
+
+    .page:nth-of-type(3n)::before {
+      width: 118px;
+      height: 118px;
+      border-radius: 28px;
+      background:
+        linear-gradient(90deg, transparent 42%, rgba(255,255,255,0.85) 43% 57%, transparent 58%),
+        linear-gradient(0deg, transparent 42%, rgba(255,255,255,0.85) 43% 57%, transparent 58%),
+        linear-gradient(135deg, rgba(246,212,196,0.88), rgba(200,214,184,0.88));
+      transform: rotate(-10deg);
+    }
+
+    .page:nth-of-type(4n)::after {
+      width: 190px;
+      height: 74px;
+      border-radius: 999px;
+      background:
+        radial-gradient(circle at 24% 50%, #fff 0 22px, transparent 23px),
+        radial-gradient(circle at 42% 37%, #fff 0 30px, transparent 31px),
+        radial-gradient(circle at 61% 50%, #fff 0 25px, transparent 26px),
+        radial-gradient(circle at 78% 56%, #fff 0 18px, transparent 19px);
+      filter: drop-shadow(0 12px 18px rgba(96,68,45,0.08));
+    }
+
+    .kicker {
+      color: #9a704e;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .chapter-title {
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 28px;
+    }
+
+    .chapter-no {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--sage);
+      color: #435239;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .lead {
+      font-size: 19px;
+      color: #5b4d42;
+    }
+
+    .toc {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .toc-row {
+      display: grid;
+      grid-template-columns: 68px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 15px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.62);
+    }
+
+    .toc-row strong {
+      color: #8b6448;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.64);
+    }
+
+    .card.peach { background: #fff0e6; }
+    .card.sage { background: #eef6e9; }
+    .card.sky { background: #eef8fb; }
+
+    .reference-image {
+      margin: 14px 0 10px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .reference-image img {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .image-caption {
+      margin: 8px 2px 0;
+      color: #8a796b;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 1.25em;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    li { margin: 8px 0; }
+
+    .quote {
+      margin: 26px 0;
+      padding: 22px 26px;
+      border-left: 6px solid var(--gold);
+      background: rgba(255,255,255,0.68);
+      color: #6b5445;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: minmax(250px, 0.82fr) 1.18fr;
+      gap: 34px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .portrait-frame {
+      padding: 14px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 48px rgba(89, 62, 40, 0.12);
+    }
+
+    .portrait-frame img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 50% 22%;
+      border-radius: 6px;
+    }
+
+    .name-card {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 8px;
+      background: #fff4e3;
+      border: 1px solid var(--line);
+    }
+
+    .name-card strong {
+      display: block;
+      color: #7b563b;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    .name-card span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.95fr) 1.05fr;
+      gap: 28px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
+    .story-photo {
+      padding: 12px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #fff, #fff1df);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 44px rgba(89, 62, 40, 0.14);
+      transform: rotate(-1.2deg);
+    }
+
+    .story-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3.35;
+      object-fit: cover;
+      object-position: 48% 51%;
+      border-radius: 22px;
+    }
+
+    .story-caption {
+      margin: 10px 4px 0;
+      color: #8a796b;
+      font-size: 14px;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 18px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .step strong {
+      color: #8b6448;
+    }
+
+    .table {
+      display: grid;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+
+    .tr {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr 1.6fr;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.7);
+    }
+
+    .tr:last-child { border-bottom: 0; }
+
+    .tr > div {
+      padding: 14px 16px;
+      border-right: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .tr > div:last-child { border-right: 0; }
+    .tr.head > div {
+      background: #f0dfc6;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .check {
+      padding: 13px 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .check::before {
+      content: "□";
+      margin-right: 10px;
+      color: #9b7251;
+      font-weight: 900;
+    }
+
+    .notice {
+      margin-top: 26px;
+      padding: 20px 22px;
+      border-radius: 8px;
+      background: #f7dfcf;
+      color: #6d5341;
+      font-size: 16px;
+    }
+
+    .closing {
+      padding: 74px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(199,219,229,0.68), transparent 24%),
+        linear-gradient(135deg, #fff8ec, #f7dfc8);
+    }
+
+    .closing h2 {
+      max-width: 720px;
+      margin: 0 auto 18px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 720px) {
+      .cover,
+      .page,
+      .closing {
+        padding: 42px 24px;
+      }
+
+      .cover { min-height: 680px; }
+
+      .cover-art {
+        width: 190px;
+        height: 190px;
+        right: 24px;
+        bottom: 36px;
+      }
+
+      h1 { font-size: 45px; }
+      h2 { font-size: 30px; }
+
+      .cover-points,
+      .grid,
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .chapter-title,
+      .step,
+      .toc-row,
+      .tr,
+      .about-layout,
+      .story-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .tr > div {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .tr > div:last-child { border-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="book">
+    <header class="cover">
+      <div>
+        <span class="eyebrow">迎接新生命的安心照護手冊</span>
+        <h1>新生兒家庭照護指南</h1>
+        <p class="subtitle">獻給即將迎接新生命、正在重新調整家庭節奏的你。願這本指南像一盞溫暖的小夜燈，陪你在餵奶、換尿布、安撫哭聲與自我照顧之間，慢慢找到適合家裡的節奏。</p>
+        <ul class="cover-points">
+          <li>月子與產後準備</li>
+          <li>新生兒健康觀察</li>
+          <li>餵奶、脹氣與吐奶</li>
+          <li>皮膚照護與成長練習</li>
+        </ul>
+      </div>
+      <div class="cover-art" aria-hidden="true"></div>
+    </header>
+
+    <section class="page tint">
+      <span class="kicker">Preface</span>
+      <div class="chapter-title">
+        <div class="chapter-no">序</div>
+        <h2>給所有正在迎接新生命的家庭</h2>
+      </div>
+      <p class="lead">寶寶來到世界的那一天，家裡多了一個小小的人，也多了好多以前沒有想過的問題：他為什麼哭？奶喝夠了嗎？黃疸正常嗎？臍帶要怎麼照顧？媽媽的心情怎麼突然變得好脆弱？</p>
+      <p>這份指南不是要把你變成完美父母，而是把新生兒照顧中最常遇到的事情，一件一件拆開來說清楚。你會看見待產與月子的選擇、寶寶出生後的觀察重點、餵奶與混合餵養、哭鬧與抱法、脹氣與吐奶、肌膚照護、抬頭練習，也會看見爸媽自己的休息與支持系統。</p>
+      <div class="quote">育兒最重要的不是一次就會，而是在每一次手忙腳亂之後，仍然願意溫柔地回到孩子身邊。</div>
+      <p>請把這本指南當成陪伴，而不是壓力。每個寶寶的氣質、發展、喝奶量和睡眠節奏都不同；每個家庭的資源、工作安排和支持系統也不同。你可以挑需要的章節先看，慢慢建立屬於你們家的照顧方法。</p>
+    </section>
+
+    <section class="page">
+      <span class="kicker">About Me</span>
+      <div class="chapter-title">
+        <div class="chapter-no">我</div>
+        <h2>認識我</h2>
+      </div>
+      <div class="about-layout">
+        <div>
+          <div class="portrait-frame">
+            <img src="assets/guo-pin-zhen-profile.jpg" alt="郭品震形象照">
+          </div>
+          <div class="name-card">
+            <strong>郭品震</strong>
+            <span>陪伴家庭建立安心育兒與未來規劃的夥伴</span>
+          </div>
+        </div>
+        <div>
+          <p class="lead">親愛的讀者你好，我是郭品震。因為工作與生活中接觸到許多年輕家庭，我深深明白，迎接新生命的喜悅背後，也常伴隨著不安、疲憊與許多來不及問出口的問題。</p>
+          <p>我希望這本《新生兒家庭照護指南》不只是一本整理知識的電子書，更像是一份可以放在手機裡、需要時就打開看的陪伴。從寶寶出生後的第一口奶、第一次哭鬧、第一次黃疸追蹤，到家人如何安排月子、照顧彼此、為孩子的未來做準備，每一個細節都值得被溫柔看待。</p>
+          <p>育兒不是一場單靠意志力撐過去的考驗，而是一段需要資訊、支持與安心感的旅程。我期待用清楚、好懂、貼近生活的方式，陪你把複雜的照顧問題慢慢拆開，讓爸媽在忙亂之中也能多一點方向。</p>
+        </div>
+      </div>
+      <div class="quote">我相信，真正好的育兒陪伴，不是告訴爸媽一定要做到完美，而是讓他們知道：遇到問題時，有方法、有資源，也有人願意一起想辦法。</div>
+      <h3>一個爸爸的育兒初心</h3>
+      <div class="story-layout">
+        <div class="story-photo">
+          <img src="assets/family.jpg" alt="郭品震與家人的生活照片">
+          <p class="story-caption">從家庭出發，理解每一位爸媽想守護孩子的心。</p>
+        </div>
+        <div>
+          <p>我不只是站在專業角度整理育兒資訊的人，我也有自己的家庭，是一位爸爸，也是一位女兒的父親。真正成為爸爸之後，我更深刻明白，育兒不是書上幾個標準答案就能解決的事，而是每天在生活裡練習：練習理解孩子、練習和伴侶分工，也練習在忙亂中讓家保持溫暖。</p>
+          <p>看著女兒一天天長大，我常常想，父母真正想給孩子的，不只是吃飽穿暖，而是一個有安全感、有支持、有未來準備的家。也因為這樣，當我陪伴不同階段的爸媽討論育兒與家庭規劃時，我特別能理解那份「想把孩子照顧好，卻又怕自己做得不夠」的心情。</p>
+          <p>這份指南，就是從這樣的心情出發。我希望它不是冷冰冰的知識整理，而是能陪你在寶寶出生後最手忙腳亂的日子裡，少一點不確定，多一點可以照著做的方向。當你半夜抱著寶寶、心裡充滿疑問時，希望它能提醒你：你不是一個人，你正在學習，而你已經很努力了。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Contents</span>
+      <div class="chapter-title">
+        <div class="chapter-no">目</div>
+        <h2>目錄</h2>
+      </div>
+      <div class="toc">
+        <div class="toc-row"><strong>第一章</strong><span>新生命開始前：月子、待產與家庭分工</span><span>01</span></div>
+        <div class="toc-row"><strong>第二章</strong><span>出生後第一週：初乳、胎便、黃疸與肚臍</span><span>02</span></div>
+        <div class="toc-row"><strong>第三章</strong><span>新生兒健康檢查：篩檢、聽力與日常觀察</span><span>03</span></div>
+        <div class="toc-row"><strong>第四章</strong><span>寶寶日常照顧：哭聲、抱法、安撫與安全</span><span>04</span></div>
+        <div class="toc-row"><strong>第五章</strong><span>餵奶小撇步：母乳、配方奶與混合餵養</span><span>05</span></div>
+        <div class="toc-row"><strong>第六章</strong><span>常見不適：脹氣、腸絞痛、吐奶與排氣操</span><span>06</span></div>
+        <div class="toc-row"><strong>第七章</strong><span>寶寶皮膚護理：洗澡、保濕、乳痂與尿布區</span><span>07</span></div>
+        <div class="toc-row"><strong>第八章</strong><span>成長練習：抬頭、互動、感官與發展觀察</span><span>08</span></div>
+        <div class="toc-row"><strong>第九章</strong><span>睡眠與作息：建立安全睡眠與家庭節奏</span><span>09</span></div>
+        <div class="toc-row"><strong>第十章</strong><span>居家安全與外出準備：把風險變成清單</span><span>10</span></div>
+        <div class="toc-row"><strong>第十一章</strong><span>爸媽也需要被照顧：產後情緒與家庭合作</span><span>11</span></div>
+        <div class="toc-row"><strong>第十二章</strong><span>常見問答與紀錄工具：把日常照顧變得有跡可循</span><span>12</span></div>
+      </div>
+    </section>
+
+    <section class="page green">
+      <span class="kicker">Chapter 01</span>
+      <div class="chapter-title">
+        <div class="chapter-no">1</div>
+        <h2>新生命開始前：月子、待產與家庭分工</h2>
+      </div>
+      <p class="lead">寶寶出生以前，爸媽最常煩惱的不是「要不要愛孩子」，而是「到底要怎麼安排才不會亂成一團」。月子地點、照顧人手、待產用品、產後休息方式，都會影響前幾週的生活品質。</p>
+      <h3>待產前可以先準備的事</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>證件與文件</h3>
+          <ul>
+            <li>媽媽身分證、健保卡、孕婦健康手冊。</li>
+            <li>產檢資料、過敏史、用藥紀錄與醫師提醒事項。</li>
+            <li>住院或生產相關文件，可先向醫院確認是否需預填。</li>
+            <li>緊急聯絡人、交通方式、醫院停車與報到位置。</li>
+          </ul>
+        </div>
+        <div class="card sky">
+          <h3>媽媽待產包</h3>
+          <ul>
+            <li>前開式睡衣、哺乳內衣、免洗內褲或產褥褲。</li>
+            <li>產褥墊、衛生棉、盥洗用品、拖鞋、毛巾。</li>
+            <li>保溫杯、簡單點心、充電器、行動電源。</li>
+            <li>讓自己安心的小物，例如護唇膏、髮圈、薄外套。</li>
+          </ul>
+        </div>
+        <div class="card sage">
+          <h3>寶寶用品</h3>
+          <ul>
+            <li>出院衣物、包巾、帽子、紗布巾。</li>
+            <li>新生兒尿布、濕紙巾或乾濕兩用巾。</li>
+            <li>汽座或安全提籃，出院搭車前先確認安裝方式。</li>
+            <li>若醫院會提供部分用品，可先詢問避免帶太多。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>家中先整理好</h3>
+          <ul>
+            <li>寶寶睡眠空間保持平整、乾淨，不放鬆散棉被和玩偶。</li>
+            <li>尿布、濕巾、替換衣物放在順手位置。</li>
+            <li>奶瓶、消毒用品、溫奶或沖泡空間先規劃好。</li>
+            <li>冰箱可準備簡單餐食，減少出院後臨時張羅。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notice">待產包不用追求一次買齊所有清單。先確認醫院會提供哪些物品，再依自己的生產方式、餵養計畫和家人支援調整，避免準備過多反而增加壓力。</div>
+      <div class="grid">
+        <div class="card sage">
+          <h3>月子中心</h3>
+          <ul>
+            <li>適合想要有護理師、嬰兒室、餐食與照護流程支援的家庭。</li>
+            <li>優點是專業支持明確，媽媽較容易休息，也能學習餵奶、拍嗝、洗澡等技巧。</li>
+            <li>需要考量費用、距離、入住天數、探訪規定與是否符合家庭預算。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>在家休養</h3>
+          <ul>
+            <li>適合家中有穩定照顧人手，或希望在熟悉環境恢復的家庭。</li>
+            <li>優點是自在、彈性高，家人能更早建立與寶寶相處的默契。</li>
+            <li>需要事先安排煮食、清潔、夜間協助與媽媽休息時間，避免所有事情落在同一個人身上。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>待產前可以先談好的三件事</h3>
+      <div class="steps">
+        <div class="step"><strong>照顧分工</strong><span>誰負責夜間換尿布？誰處理瓶餵、消毒、洗衣？誰在媽媽需要休息時接手？先談好，比產後邊累邊吵更有效。</span></div>
+        <div class="step"><strong>訪客規則</strong><span>寶寶剛出生時，爸媽和寶寶都需要適應。可以先設定探訪時間、是否抱寶寶、是否親吻寶寶，以及身體不適時不探訪。</span></div>
+        <div class="step"><strong>求助名單</strong><span>把兒科診所、產後護理之家、泌乳顧問、可信任親友、緊急聯絡人整理好。真正焦慮時，不用再臨時找資料。</span></div>
+      </div>
+      <div class="notice">量力而為，就是最好的選擇。月子中心不是標準答案，在家休養也不是比較辛苦的選項；重點是媽媽能恢復、寶寶被照顧、家庭能穩定運作。</div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Chapter 02</span>
+      <div class="chapter-title">
+        <div class="chapter-no">2</div>
+        <h2>出生後第一週：初乳、胎便、黃疸與肚臍</h2>
+      </div>
+      <p class="lead">寶寶出生後的第一週，很多狀況看起來嚇人，其實多半是新生兒正在適應世界。爸媽要做的，是知道哪些屬於常見變化，哪些需要詢問醫護人員。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>初乳與第一次哺乳</h3>
+          <p>產後前幾天的乳汁量可能不多，但初乳濃縮了珍貴營養與抗體。若媽媽與寶寶狀況允許，可在醫護協助下進行肌膚接觸與第一次哺乳。剖腹產媽媽也可以在回病房、傷口安全的情況下開始嘗試。</p>
+          <ul>
+            <li>新生兒胃容量很小，不需要用成人想像中的奶量衡量。</li>
+            <li>持續讓寶寶吸吮，有助於刺激乳汁分泌。</li>
+            <li>若疼痛、含乳困難或寶寶吸吮效率差，可及早請護理師或泌乳專業協助。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>胎便與便便顏色</h3>
+          <p>剛出生的便便常是深綠或黑綠色胎便，之後會逐漸轉為黃綠、金黃色或依餵養方式略有差異。爸媽可以觀察顏色、次數、濕尿布量與寶寶精神。</p>
+          <div class="reference-image">
+            <img src="assets/infant-stool-color-card.jpg" alt="嬰兒大便辨識卡">
+            <p class="image-caption">圖片來源：財團法人兒童肝膽疾病防治基金會「嬰兒大便辨識卡」。1-6 號顏色屬不正常警訊，7-9 號為常見正常顏色。</p>
+          </div>
+          <ul>
+            <li>白色、灰白色便便需要盡快詢問醫師。</li>
+            <li>紅色血便、黑便持續或伴隨精神差，也應就醫。</li>
+            <li>若出現 1-6 號顏色、出生滿 14 天黃疸仍未消退，或大便顏色介於正常與異常之間，請帶寶寶就醫並檢驗直接及總膽紅素。</li>
+            <li>便便太稀、太乾或明顯異常，先記錄照片與時間，方便醫護判斷。</li>
+          </ul>
+        </div>
+        <div class="card sky">
+          <h3>黃疸觀察</h3>
+          <p>許多新生兒在出生後數天出現皮膚或眼白偏黃，這與膽紅素代謝有關。生理性黃疸常會逐漸改善，但仍需要依醫院安排測量與追蹤。</p>
+          <div class="reference-image">
+            <img src="assets/newborn-jaundice.jpg" alt="新生兒黃疸示意照片">
+            <p class="image-caption">圖片來源：中國醫藥大學附設醫院「新生兒黃疸/SBR」衛教海報。實際判斷仍應以自然光觀察與醫療檢測為準。</p>
+          </div>
+          <ul>
+            <li>留意黃疸是否越來越明顯、延伸到四肢或伴隨嗜睡。</li>
+            <li>若寶寶喝奶差、活動力下降、哭聲微弱，請盡快回診。</li>
+            <li>母乳寶寶黃疸可能退得較慢，但仍要由醫師評估是否正常。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>肚臍照護</h3>
+          <p>臍帶通常會在出生後一到兩週內自然脫落。照護原則是保持乾爽、避免摩擦、留意異味與分泌物。</p>
+          <div class="reference-image">
+            <img src="assets/umbilical-care-illustration.png" alt="新生兒肚臍照護示意圖">
+            <p class="image-caption">原創照護示意圖：尿布可往下反摺，讓肚臍區保持乾爽；若有紅腫、流膿、臭味或持續出血，請就醫。</p>
+          </div>
+          <ul>
+            <li>尿布可往下反摺，避免蓋住肚臍。</li>
+            <li>洗澡後輕柔擦乾，依醫護指示清潔。</li>
+            <li>若紅腫、流膿、明顯臭味、持續出血或寶寶發燒，請就醫。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="page tint">
+      <span class="kicker">Chapter 03</span>
+      <div class="chapter-title">
+        <div class="chapter-no">3</div>
+        <h2>新生兒健康檢查：把握出生後的關鍵里程碑</h2>
+      </div>
+      <p class="lead">新生兒檢查像是寶寶人生第一張健康地圖。它不是為了讓爸媽緊張，而是幫助我們早一點發現需要追蹤的地方，讓寶寶在最初就被好好守護。</p>
+      <div class="steps">
+        <div class="step"><strong>出生評估</strong><span>醫護會評估寶寶呼吸、膚色、活動力、體重、身長、頭圍與基本外觀。爸媽可留意醫師是否有特別提醒需追蹤的項目。</span></div>
+        <div class="step"><strong>新生兒篩檢</strong><span>通常會在出生後一定時間採集足跟血，檢查部分先天代謝或內分泌相關疾病。若結果需要複檢，請依通知回診，不要自行解讀為一定有病。</span></div>
+        <div class="step"><strong>聽力篩檢</strong><span>早期發現聽力問題，有助於語言與發展介入。若初篩未通過，依醫院安排複篩或進一步檢查。</span></div>
+        <div class="step"><strong>黃疸追蹤</strong><span>醫院會依寶寶出生天數、數值與狀況判斷是否需要照光或回診追蹤。爸媽回家後仍要觀察膚色、吃奶與精神。</span></div>
+      </div>
+      <h3>回家後每日觀察表</h3>
+      <div class="checklist">
+        <div class="check">今天喝奶次數與精神狀態</div>
+        <div class="check">濕尿布與便便顏色</div>
+        <div class="check">體溫是否穩定</div>
+        <div class="check">皮膚、眼白是否更黃</div>
+        <div class="check">肚臍是否乾爽無異味</div>
+        <div class="check">哭聲是否和平常不同</div>
+      </div>
+      <div class="notice">若寶寶發燒、呼吸費力、嘴唇發紫、喝奶明顯變差、活動力下降、持續嘔吐、抽搐，或爸媽直覺覺得不對勁，請不要等待，立即聯絡醫療單位。</div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Chapter 04</span>
+      <div class="chapter-title">
+        <div class="chapter-no">4</div>
+        <h2>寶寶日常照顧：哭聲、抱法、安撫與安全</h2>
+      </div>
+      <p class="lead">哭，是新生兒最主要的語言。寶寶不是故意難帶，而是正在用自己唯一熟悉的方式告訴你：「我需要你幫我看看發生什麼事。」</p>
+      <div class="grid">
+        <div class="card sage">
+          <h3>常見哭鬧原因</h3>
+          <ul>
+            <li>餓了：尋乳、轉頭、吸手、嘴巴動，若沒回應會越哭越大聲。</li>
+            <li>想睡：眼神放空、打哈欠、抓臉、越哄越煩躁。</li>
+            <li>尿布濕或大便：皮膚不舒服，哭聲可能斷斷續續。</li>
+            <li>太冷或太熱：摸後頸判斷，不只看手腳溫度。</li>
+            <li>需要安全感：想被抱、想聽熟悉聲音、想回到接近子宮的包覆感。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>安撫流程</h3>
+          <ol>
+            <li>先確認安全與呼吸，抱起或靠近寶寶。</li>
+            <li>檢查尿布、體溫、衣物、光線與聲音刺激。</li>
+            <li>判斷是否餓了或想睡，嘗試餵奶、拍嗝或降低刺激。</li>
+            <li>用固定語句、輕拍、搖籃抱或白噪音建立安定感。</li>
+            <li>哭聲異常尖銳、虛弱或持續無法安撫時，尋求專業協助。</li>
+          </ol>
+        </div>
+      </div>
+      <h3>抱寶寶的六種方式</h3>
+      <div class="table">
+        <div class="tr head"><div>抱法</div><div>適合情境</div><div>注意事項</div></div>
+        <div class="tr"><div>直立抱</div><div>拍嗝、脹氣、喝奶後安撫。</div><div>一手托臀，一手支撐背與頭頸，時間不宜太久。</div></div>
+        <div class="tr"><div>橫抱</div><div>餵奶、安撫哭鬧、讓寶寶休息。</div><div>頭頸放在手肘彎，另一手托住背與臀。</div></div>
+        <div class="tr"><div>搖籃抱</div><div>哄睡、親密互動、溫柔安撫。</div><div>動作輕柔，不要劇烈搖晃。</div></div>
+        <div class="tr"><div>面對面抱</div><div>說話、看臉、建立安全感。</div><div>保持頭頸支撐，避免寶寶後仰。</div></div>
+        <div class="tr"><div>飛機抱</div><div>脹氣不適時短時間嘗試。</div><div>需穩定托住胸腹與頭頸，爸媽手臂累時立刻停止。</div></div>
+        <div class="tr"><div>背巾抱</div><div>外出或需要空出雙手時。</div><div>確認寶寶呼吸道暢通、臉不被遮住、姿勢符合月齡。</div></div>
+      </div>
+      <div class="notice">請避免猛烈搖晃寶寶、單手拉起手臂、讓未能坐穩的寶寶長時間坐立，或讓寶寶睡在柔軟枕頭、棉被、沙發縫隙中。</div>
+    </section>
+
+    <section class="page green">
+      <span class="kicker">Chapter 05</span>
+      <div class="chapter-title">
+        <div class="chapter-no">5</div>
+        <h2>餵奶小撇步：母乳、配方奶與混合餵養</h2>
+      </div>
+      <p class="lead">餵奶不只是營養，也是一段親密的練習。無論純母乳、配方奶或混合餵養，真正重要的是寶寶能穩定成長，媽媽也能被支持。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>母乳餵養重點</h3>
+          <ul>
+            <li>初乳很珍貴，量少但濃縮，前幾天不必只看奶量焦慮。</li>
+            <li>確認寶寶含乳姿勢，減少乳頭疼痛與吸吮效率不佳。</li>
+            <li>可記錄餵奶時間、尿布量、寶寶精神與體重成長。</li>
+            <li>若塞奶、乳腺炎症狀、疼痛或寶寶喝奶困難，及早求助。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>擠乳口訣：壓、擠、放</h3>
+          <ul>
+            <li>壓：手呈 C 字型，靠近乳暈外側，往胸壁方向輕壓。</li>
+            <li>擠：用節奏輕壓，不要摩擦皮膚。</li>
+            <li>放：手指放鬆，重複同樣節奏。</li>
+            <li>保持放鬆、補充水分，找到不疼痛的方式比硬擠更重要。</li>
+          </ul>
+        </div>
+        <div class="card sky">
+          <h3>配方奶與瓶餵</h3>
+          <ul>
+            <li>依產品說明沖泡，水量與奶粉比例不要自行加減。</li>
+            <li>奶嘴流速要適合月齡，倒置時應是穩定滴落，不是快速流出。</li>
+            <li>餵奶時讓奶嘴充滿奶，減少吸入空氣。</li>
+            <li>奶瓶與相關用品需依建議清潔、消毒與保存。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>混合餵養</h3>
+          <ul>
+            <li>補充式：先親餵或母乳，再依需求補配方奶。</li>
+            <li>替代式：某些時段使用配方奶，例如媽媽工作、休息或乳量不足時。</li>
+            <li>若想回到全母乳，先找出困難點：姿勢、吸吮、頻率、媽媽休息與壓力。</li>
+            <li>不要把餵養方式變成自責題，寶寶健康與家庭可持續才是重點。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>寶寶吃得夠不夠？可觀察這些線索</h3>
+      <div class="checklist">
+        <div class="check">喝奶後能放鬆或睡一段時間</div>
+        <div class="check">濕尿布量逐漸穩定</div>
+        <div class="check">體重依醫師評估穩定增加</div>
+        <div class="check">清醒時有反應、有活動力</div>
+        <div class="check">皮膚與嘴唇不乾燥</div>
+        <div class="check">沒有持續拒奶或明顯嗜睡</div>
+      </div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Chapter 06</span>
+      <div class="chapter-title">
+        <div class="chapter-no">6</div>
+        <h2>常見不適：脹氣、腸絞痛、吐奶與排氣操</h2>
+      </div>
+      <p class="lead">寶寶前三個月常見脹氣、哭鬧與吐奶。多數會隨著腸胃成熟逐漸改善，但爸媽可以用正確餵養、拍嗝、姿勢調整與溫柔按摩，幫寶寶舒服一點。</p>
+      <div class="grid">
+        <div class="card sage">
+          <h3>預防脹氣</h3>
+          <ul>
+            <li>親餵時確認含乳夠深，減少吸進空氣。</li>
+            <li>瓶餵時讓奶嘴充滿奶，選擇適合流速。</li>
+            <li>沖泡配方奶後避免大力搖晃，可輕柔旋轉並等待氣泡減少。</li>
+            <li>每次餵奶中途與結束後，都可視情況拍嗝。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>拍嗝方式</h3>
+          <ul>
+            <li>直立拍：寶寶靠在肩上，一手托臀，一手空掌輕拍背。</li>
+            <li>坐姿拍：寶寶坐在大腿上，支撐胸口與下巴，輕拍背部。</li>
+            <li>趴姿拍：寶寶趴在大人腿上，頭略高於胸口，輕拍或撫背。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>排氣操與肚肚按摩</h3>
+      <div class="steps">
+        <div class="step"><strong>時機</strong><span>選在寶寶精神不錯、喝奶後約半小時到一小時，避免剛喝完奶立刻按摩。</span></div>
+        <div class="step"><strong>環境</strong><span>室溫維持舒適，洗淨雙手、取下飾品，手掌搓熱後再碰寶寶肚子。</span></div>
+        <div class="step"><strong>1-7-0</strong><span>在寶寶腹部以溫柔力度畫「1、7、0」，若寶寶抗拒、哭鬧或不舒服就停止。</span></div>
+        <div class="step"><strong>空中腳踏車</strong><span>握住寶寶小腿，左右交替彎曲靠近肚子，或雙膝一起輕推向腹部，重複 5 至 10 次。</span></div>
+      </div>
+      <h3>吐奶怎麼辦？</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>常見原因</h3>
+          <ul>
+            <li>胃容量小、賁門發展未成熟。</li>
+            <li>一次喝太多、喝太急或吸入太多空氣。</li>
+            <li>喝完奶立刻平躺、劇烈晃動或壓迫肚子。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>改善方法</h3>
+          <ul>
+            <li>少量多餐，餵奶過程中適時停下拍嗝。</li>
+            <li>喝完奶後直立抱一段時間，避免立即激烈互動。</li>
+            <li>確認奶嘴流速，不要讓奶流太快。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="notice">若吐出黃綠色液體、帶血、噴射狀嘔吐、持續超過半天、伴隨發燒、精神差、拒奶或體重成長不佳，請盡快就醫。</div>
+    </section>
+
+    <section class="page tint">
+      <span class="kicker">Chapter 07</span>
+      <div class="chapter-title">
+        <div class="chapter-no">7</div>
+        <h2>寶寶皮膚護理：洗澡、保濕、乳痂與尿布區</h2>
+      </div>
+      <p class="lead">寶寶皮膚細嫩，照護原則不是洗得越乾淨越好，而是溫和清潔、保持乾爽、適度保濕，並減少刺激。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>臉部與頭皮清潔</h3>
+          <ul>
+            <li>多數時候以清水與柔軟毛巾即可，不需過多清潔用品。</li>
+            <li>水溫以摸起來溫暖不燙為原則。</li>
+            <li>清潔動作要輕，不要用力搓揉臉頰與頭皮。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>洗澡重點</h3>
+          <ul>
+            <li>先準備好衣物、尿布、毛巾，再開始洗澡。</li>
+            <li>房間溫度避免過冷，洗完立刻擦乾。</li>
+            <li>胎脂不需要刻意用力清除，會隨時間自然減少。</li>
+          </ul>
+        </div>
+        <div class="card sage">
+          <h3>保濕選擇</h3>
+          <ul>
+            <li>皮膚狀況穩定：每天薄擦一次或依季節調整。</li>
+            <li>乾燥、脫屑：可增加頻率，選擇單純、適合嬰兒的產品。</li>
+            <li>秋冬乾燥或濕疹傾向，可與醫師討論保濕頻率與產品。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>乳痂與褶皺</h3>
+          <ul>
+            <li>輕微乳痂可用清水濕敷後輕柔擦拭，避免硬摳。</li>
+            <li>中度乳痂可在專業建議下用嬰兒油或凡士林軟化。</li>
+            <li>脖子、腋下、鼠蹊等褶皺處要洗淨擦乾，再薄擦保濕。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>尿布區照護</h3>
+      <div class="steps">
+        <div class="step"><strong>勤換</strong><span>尿布濕了或大便後盡快更換，減少皮膚長時間接觸尿便。</span></div>
+        <div class="step"><strong>溫和</strong><span>清潔時避免過度摩擦，可用清水或嬰兒適用濕巾，擦乾後再包尿布。</span></div>
+        <div class="step"><strong>透氣</strong><span>皮膚泛紅時可短時間讓屁股透氣，必要時使用合適的屁屁膏。</span></div>
+        <div class="step"><strong>就醫</strong><span>若紅疹擴大、破皮、滲液、寶寶明顯疼痛或反覆不癒，請讓醫師評估。</span></div>
+      </div>
+    </section>
+
+    <section class="page green">
+      <span class="kicker">Chapter 08</span>
+      <div class="chapter-title">
+        <div class="chapter-no">8</div>
+        <h2>成長練習：抬頭、互動、感官與發展觀察</h2>
+      </div>
+      <p class="lead">寶寶的成長不是比賽，而是一段逐步展開的旅程。爸媽可以用觀察、互動與紀錄，陪孩子在安全的節奏中練習身體與感官能力。</p>
+      <h3>抬頭與趴趴練習</h3>
+      <div class="steps">
+        <div class="step"><strong>0-1 個月</strong><span>在清醒且有人陪伴時，短時間趴在大人胸前或床面，重點是熟悉姿勢，不勉強時間。</span></div>
+        <div class="step"><strong>1-2 個月</strong><span>寶寶可能能短暫抬頭或轉頭。可用聲音、臉或玩具吸引，但只要寶寶累了就休息。</span></div>
+        <div class="step"><strong>2-3 個月</strong><span>趴姿時間可逐漸增加，每次數分鐘，一天多次。可鋪軟墊，讓寶寶練習頸背肌肉。</span></div>
+        <div class="step"><strong>3-4 個月</strong><span>抬頭更穩，開始嘗試用手臂支撐。爸媽可從側邊互動，鼓勵左右轉頭。</span></div>
+      </div>
+      <div class="notice">若寶寶三個月後完全無法抬頭、頭總是固定歪向同一側、活動力明顯弱，或爸媽有任何擔心，請諮詢兒科或復健相關專業。</div>
+      <h3>爸媽也可以開始規劃的事</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>健康與成長紀錄</h3>
+          <ul>
+            <li>固定保存預防接種、健檢、身高體重與回診紀錄。</li>
+            <li>記錄寶寶第一次微笑、翻身、抬頭、發聲等成長里程碑。</li>
+            <li>若交由托育或家人照顧，可建立簡單交接表。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>家庭保障與教育基金</h3>
+          <ul>
+            <li>先盤點家庭收入、緊急預備金、醫療支出與照顧責任。</li>
+            <li>保險與教育金不是越多越好，而是要符合家庭負擔與需求。</li>
+            <li>重大決策建議與可信任的專業人士討論，避免因焦慮倉促購買。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>每日照顧檢核表</h3>
+      <div class="checklist">
+        <div class="check">喝奶與尿布狀況已記錄</div>
+        <div class="check">寶寶有清醒互動時間</div>
+        <div class="check">有短時間趴趴練習</div>
+        <div class="check">皮膚、肚臍、尿布區已觀察</div>
+        <div class="check">爸媽至少一人有休息片刻</div>
+        <div class="check">需要幫忙時有開口求援</div>
+      </div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Chapter 09</span>
+      <div class="chapter-title">
+        <div class="chapter-no">9</div>
+        <h2>睡眠與作息：建立安全睡眠與家庭節奏</h2>
+      </div>
+      <p class="lead">新生兒的睡眠不是按表操課，而是慢慢從「吃、睡、醒來、再吃」的循環中長出規律。爸媽一開始不需要追求完美作息，可以先建立安全睡眠環境、穩定睡前流程，以及家人輪替休息的制度。</p>
+      <div class="grid">
+        <div class="card sage">
+          <h3>安全睡眠原則</h3>
+          <ul>
+            <li>寶寶睡覺時以仰睡為主，床面保持平整、堅實。</li>
+            <li>嬰兒床內避免放枕頭、厚棉被、玩偶、防撞墊與鬆散布料。</li>
+            <li>讓寶寶睡在自己的安全睡眠空間，方便照看但避免成人壓到。</li>
+            <li>室溫以大人穿著舒適為基準，不需把寶寶包到流汗。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>睡前流程範例</h3>
+          <ol>
+            <li>調暗燈光，把電視、手機聲音降到最低。</li>
+            <li>換尿布、穿睡衣或包巾，讓身體知道要休息了。</li>
+            <li>餵奶與拍嗝後，保持低刺激互動。</li>
+            <li>用同一句晚安語、同一段輕拍或同一首歌，建立熟悉感。</li>
+          </ol>
+        </div>
+      </div>
+      <h3>不同階段的睡眠觀察</h3>
+      <div class="steps">
+        <div class="step"><strong>0-1 個月</strong><span>睡眠片段很短是常態，爸媽的重點是配合需求餵養、觀察尿布與精神，並確保大人也有人輪流休息。</span></div>
+        <div class="step"><strong>1-2 個月</strong><span>寶寶開始有較明顯的清醒時段。白天可以接觸自然光，晚上降低刺激，幫助他慢慢分辨日夜。</span></div>
+        <div class="step"><strong>2-3 個月</strong><span>可逐步建立固定睡前流程，但不要把睡眠訓練變成壓力。若寶寶明顯不舒服，先回到需求檢查。</span></div>
+        <div class="step"><strong>3 個月後</strong><span>有些寶寶夜間睡眠會拉長，有些仍會夜醒。比較重要的是整體精神、吃奶、成長與照顧者是否能維持。</span></div>
+      </div>
+      <div class="notice">若寶寶睡眠時呼吸異常、嘴唇發紫、叫不醒、發燒或活動力明顯下降，請立即尋求醫療協助。睡眠問題若讓爸媽長期崩潰，也可以請兒科醫師或護理師協助檢視作息。</div>
+    </section>
+
+    <section class="page tint">
+      <span class="kicker">Chapter 10</span>
+      <div class="chapter-title">
+        <div class="chapter-no">10</div>
+        <h2>居家安全與外出準備：把風險變成清單</h2>
+      </div>
+      <p class="lead">照顧寶寶最怕的是「我只是轉身一下」。新生兒還不會自己保護自己，所以居家安全不是等寶寶會爬才開始，而是從第一天就把可能的危險移走。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>換尿布與洗澡安全</h3>
+          <ul>
+            <li>換尿布時，一手盡量保持接觸寶寶，不讓寶寶獨自躺在高處。</li>
+            <li>洗澡前先把毛巾、衣物、尿布、沐浴用品放好，避免中途離開。</li>
+            <li>先放冷水再加熱水，水溫用手腕內側確認。</li>
+            <li>洗澡時間不用長，洗完立刻擦乾，尤其是脖子、腋下、鼠蹊等褶皺處。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>抱睡、沙發與大床</h3>
+          <ul>
+            <li>大人非常疲累時，避免抱著寶寶坐在沙發或床邊打瞌睡。</li>
+            <li>不要讓寶寶睡在成人枕頭、棉被堆、沙發縫隙或懶骨頭上。</li>
+            <li>若親友要幫忙照顧，也請先說明家裡的安全規則。</li>
+            <li>照顧者喝酒、服用會嗜睡的藥物或極度疲累時，應避免單獨夜間照顧。</li>
+          </ul>
+        </div>
+        <div class="card sage">
+          <h3>外出包建議</h3>
+          <ul>
+            <li>尿布、濕巾、替換衣物、紗布巾、奶瓶或哺乳用品。</li>
+            <li>小垃圾袋、隔尿墊、寶寶健保卡與兒童健康手冊。</li>
+            <li>依天氣準備薄毯或外套，但避免遮住推車或汽座造成悶熱。</li>
+            <li>如果要長時間外出，先查附近是否有哺乳室、換尿布台或可休息空間。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>汽座與移動</h3>
+          <ul>
+            <li>坐車時使用符合規範的嬰兒汽座，不以大人懷抱代替。</li>
+            <li>寶寶坐汽座時確認肩帶位置與鬆緊，不穿太厚外套再扣安全帶。</li>
+            <li>下車前後養成檢查後座的習慣，避免把寶寶或用品遺留車內。</li>
+            <li>汽座主要用於交通安全，不建議長時間當作睡眠床。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>家中安全巡檢</h3>
+      <div class="checklist">
+        <div class="check">嬰兒床內沒有鬆散棉被與玩偶</div>
+        <div class="check">熱水、藥品、清潔用品放在寶寶碰不到處</div>
+        <div class="check">換尿布台旁用品已備齊</div>
+        <div class="check">地板電線與小物品已收好</div>
+        <div class="check">照顧者知道緊急聯絡方式</div>
+        <div class="check">外出包固定放在容易拿的位置</div>
+      </div>
+    </section>
+
+    <section class="page green">
+      <span class="kicker">Chapter 11</span>
+      <div class="chapter-title">
+        <div class="chapter-no">11</div>
+        <h2>爸媽也需要被照顧：產後情緒與家庭合作</h2>
+      </div>
+      <p class="lead">寶寶出生後，大家很容易把注意力都放在孩子身上，卻忘了媽媽正在復原、爸爸也在適應新角色。穩定的照顧不是靠一個人硬撐，而是靠家庭把責任拆開、把求助變成正常選項。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>產後情緒不是意志力問題</h3>
+          <p>產後荷爾蒙變化、睡眠不足、身體疼痛、餵奶壓力、角色改變與家人期待，都可能讓媽媽覺得自己不像自己。短暫流淚或情緒起伏很常見，但如果低落、焦慮、罪惡感、無助感持續存在，就不該只叫媽媽「想開一點」。</p>
+          <ul>
+            <li>每天都很想哭，或對原本在意的事情失去興趣。</li>
+            <li>覺得自己不是好媽媽，甚至覺得寶寶沒有自己會更好。</li>
+            <li>睡不著、吃不下、過度焦慮，或無法放鬆照顧寶寶。</li>
+            <li>出現傷害自己或寶寶的念頭時，請立即求助。</li>
+          </ul>
+        </div>
+        <div class="card peach">
+          <h3>爸爸與伴侶可以做的事</h3>
+          <ul>
+            <li>不要只問「要幫忙嗎」，直接接手一件具體工作，例如洗奶瓶、換尿布、拍嗝、記錄餵奶。</li>
+            <li>把媽媽睡覺視為家庭任務，不把休息看成偷懶。</li>
+            <li>幫忙擋掉過多訪客與不必要的建議，讓家裡保持安靜。</li>
+            <li>當媽媽情緒低落時，先聽她說，不急著糾正或講道理。</li>
+          </ul>
+        </div>
+      </div>
+      <h3>家庭分工表</h3>
+      <div class="table">
+        <div class="tr head"><div>任務</div><div>可以怎麼分</div><div>提醒</div></div>
+        <div class="tr"><div>夜間照顧</div><div>一人餵奶或安撫，另一人負責換尿布與拍嗝。</div><div>若只有媽媽能親餵，其他人更要接手清潔與家務。</div></div>
+        <div class="tr"><div>家務餐食</div><div>用外送、冷凍餐、家人支援或簡化菜單，不追求完美。</div><div>產後前幾週的目標是活下來，不是維持展示屋。</div></div>
+        <div class="tr"><div>醫療回診</div><div>一人負責帶證件與紀錄，一人負責抱寶寶與安撫。</div><div>回診前先寫下問題，避免到了診間忘記問。</div></div>
+        <div class="tr"><div>情緒支持</div><div>每天留 10 分鐘問彼此今天最累和最需要幫忙的事。</div><div>不要把育兒衝突累積到爆炸才討論。</div></div>
+      </div>
+      <div class="notice">若產後情緒低落持續超過兩週、越來越嚴重，或出現自傷、傷害寶寶念頭，請立即聯絡醫師、心理專業、可信任親友或緊急資源。求助不是失敗，是保護全家的行動。</div>
+    </section>
+
+    <section class="page">
+      <span class="kicker">Chapter 12</span>
+      <div class="chapter-title">
+        <div class="chapter-no">12</div>
+        <h2>常見問答與紀錄工具：把日常照顧變得有跡可循</h2>
+      </div>
+      <p class="lead">照顧新生兒時的焦慮，很多時候來自「我不知道這樣算不算正常」。紀錄不是為了把育兒變成考核，而是讓你在回診、求助或交接照顧時，有清楚線索可以參考。</p>
+      <div class="grid">
+        <div class="card sage">
+          <h3>Q1：寶寶一直哭，是不是我不會帶？</h3>
+          <p>不是。哭是寶寶最早的表達方式。你可以先依序檢查餓、尿布、想睡、太冷太熱、脹氣、需要抱抱。若哭聲和平常不同、尖銳或虛弱，或合併發燒、拒奶、活動力差，就應就醫。</p>
+        </div>
+        <div class="card peach">
+          <h3>Q2：奶量和別人不一樣怎麼辦？</h3>
+          <p>每個寶寶胃容量、吸吮能力與成長速度都不同。比起單次奶量，更應看整天尿布量、精神、體重成長與醫師評估。若寶寶明顯喝不下、嗜睡或體重不增，請尋求專業協助。</p>
+        </div>
+        <div class="card">
+          <h3>Q3：親友意見很多，該聽誰的？</h3>
+          <p>感謝關心，但醫療、安全與餵養相關問題，優先依兒科醫師、護理師、泌乳顧問等專業建議。家庭內可以先設定原則：有疑問就查證，不用在疲累時立刻做決定。</p>
+        </div>
+        <div class="card sky">
+          <h3>Q4：什麼時候需要立刻就醫？</h3>
+          <p>發燒、呼吸費力、嘴唇發紫、抽搐、叫不醒、活動力明顯下降、持續嘔吐、拒奶、血便、黃綠色嘔吐物、黃疸快速加重等，都不要只在家觀察。</p>
+        </div>
+      </div>
+      <h3>24 小時照顧紀錄</h3>
+      <div class="table">
+        <div class="tr head"><div>項目</div><div>記錄方式</div><div>觀察重點</div></div>
+        <div class="tr"><div>餵奶</div><div>時間、方式、約略奶量或親餵左右側。</div><div>喝奶是否費力、是否常嗆奶、喝完是否放鬆。</div></div>
+        <div class="tr"><div>尿布</div><div>濕尿布次數、便便顏色與質地。</div><div>尿量是否變少、便便是否白灰紅黑或明顯異常。</div></div>
+        <div class="tr"><div>睡眠</div><div>入睡時間、醒來時間、安撫方式。</div><div>是否過度嗜睡、叫不醒，或醒著時精神很差。</div></div>
+        <div class="tr"><div>體溫與精神</div><div>有疑慮時量體溫，記錄活動力與哭聲。</div><div>發燒、呼吸異常、哭聲突然改變都要提高警覺。</div></div>
+      </div>
+      <h3>回診前可以先寫下來</h3>
+      <div class="checklist">
+        <div class="check">最擔心的症狀是什麼，從什麼時候開始</div>
+        <div class="check">一天喝奶與尿布大約幾次</div>
+        <div class="check">是否有照片或影片可以給醫師看</div>
+        <div class="check">最近是否換奶、用藥或接觸生病的人</div>
+        <div class="check">寶寶體重、體溫與精神狀態變化</div>
+        <div class="check">爸媽希望醫師協助判斷的問題</div>
+      </div>
+    </section>
+
+    <footer class="closing">
+      <h2>願這份指南，成為你育兒旅程裡溫柔的導航</h2>
+      <p>你不需要一開始就知道所有答案。每一次餵奶、每一次抱起、每一次觀察寶寶的小變化，都會讓你更懂這個孩子，也更懂自己作為父母的力量。</p>
+      <div class="notice">本指南為一般育兒資訊，不能取代醫療診斷或個別化專業建議。寶寶若有異常症狀、媽媽產後情緒長期低落或出現傷害自己與孩子的念頭，請立即尋求醫療與心理專業協助。</div>
+    </footer>
+  </main>
+</body>
+</html>
