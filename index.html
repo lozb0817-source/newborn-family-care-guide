@@ -416,16 +416,16 @@
 
     .toc {
       display: grid;
-      gap: 12px;
+      gap: 16px;
       margin-top: 28px;
     }
 
     .toc-row {
       display: grid;
-      grid-template-columns: 68px 1fr auto;
+      grid-template-columns: 112px 1fr auto;
       gap: 16px;
       align-items: center;
-      padding: 15px 18px;
+      padding: 20px 22px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: rgba(255,255,255,0.62);
@@ -433,6 +433,30 @@
 
     .toc-row strong {
       color: #8b6448;
+    }
+
+    .toc-row span:nth-child(2) {
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+
+    .toc-row em {
+      display: block;
+      margin-top: 6px;
+      color: #8a796b;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .toc-row small {
+      color: #9a704e;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
     }
 
     .grid {
@@ -730,6 +754,14 @@
         grid-template-columns: 1fr;
       }
 
+      .toc-row {
+        gap: 8px;
+      }
+
+      .toc-row small {
+        white-space: normal;
+      }
+
       .tr > div {
         border-right: 0;
         border-bottom: 1px solid var(--line);
@@ -817,23 +849,11 @@
         <h2>目錄</h2>
       </div>
       <div class="toc">
-        <div class="toc-row"><strong>第一章</strong><span>新生命開始前：月子、待產與家庭分工</span><span>01</span></div>
-        <div class="toc-row"><strong>工具頁</strong><span>待產包與回家前確認清單</span><span>A</span></div>
-        <div class="toc-row"><strong>第二章</strong><span>出生後第一週：初乳、胎便、黃疸與肚臍</span><span>02</span></div>
-        <div class="toc-row"><strong>工具頁</strong><span>出生第一週觀察表</span><span>B</span></div>
-        <div class="toc-row"><strong>第三章</strong><span>新生兒健康檢查：篩檢、聽力與日常觀察</span><span>03</span></div>
-        <div class="toc-row"><strong>第四章</strong><span>寶寶日常照顧：哭聲、抱法、安撫與安全</span><span>04</span></div>
-        <div class="toc-row"><strong>第五章</strong><span>餵奶小撇步：母乳、配方奶與混合餵養</span><span>05</span></div>
-        <div class="toc-row"><strong>工具頁</strong><span>餵奶與尿布紀錄頁</span><span>C</span></div>
-        <div class="toc-row"><strong>第六章</strong><span>常見不適：脹氣、腸絞痛、吐奶與排氣操</span><span>06</span></div>
-        <div class="toc-row"><strong>第七章</strong><span>寶寶皮膚護理：洗澡、保濕、乳痂與尿布區</span><span>07</span></div>
-        <div class="toc-row"><strong>第八章</strong><span>成長練習：抬頭、互動、感官與發展觀察</span><span>08</span></div>
-        <div class="toc-row"><strong>工具頁</strong><span>0-100 天照護節奏地圖</span><span>D</span></div>
-        <div class="toc-row"><strong>第九章</strong><span>睡眠與作息：建立安全睡眠與家庭節奏</span><span>09</span></div>
-        <div class="toc-row"><strong>第十章</strong><span>居家安全與外出準備：把風險變成清單</span><span>10</span></div>
-        <div class="toc-row"><strong>第十一章</strong><span>爸媽也需要被照顧：產後情緒與家庭合作</span><span>11</span></div>
-        <div class="toc-row"><strong>第十二章</strong><span>常見問答與紀錄工具：把日常照顧變得有跡可循</span><span>12</span></div>
-        <div class="toc-row"><strong>工具頁</strong><span>就醫前快速整理</span><span>E</span></div>
+        <div class="toc-row"><strong>Part 01</strong><span>迎接寶寶前的準備<em>月子安排、待產包、家庭分工與回家前確認清單</em></span><small>CH 01 + A</small></div>
+        <div class="toc-row"><strong>Part 02</strong><span>出生後第一週的照護<em>初乳、胎便、黃疸、肚臍、新生兒檢查與第一週觀察表</em></span><small>CH 02-03 + B</small></div>
+        <div class="toc-row"><strong>Part 03</strong><span>日常照顧與餵養節奏<em>哭聲安撫、抱法安全、母乳與配方奶、餵奶尿布紀錄</em></span><small>CH 04-05 + C</small></div>
+        <div class="toc-row"><strong>Part 04</strong><span>常見狀況與成長練習<em>脹氣吐奶、皮膚照護、抬頭互動，以及 0-100 天照護節奏地圖</em></span><small>CH 06-08 + D</small></div>
+        <div class="toc-row"><strong>Part 05</strong><span>睡眠、安全與爸媽支持<em>安全睡眠、外出準備、產後情緒、家庭合作、常見問答與就醫前整理</em></span><small>CH 09-12 + E</small></div>
       </div>
     </section>
 
