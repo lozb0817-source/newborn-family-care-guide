@@ -710,62 +710,6 @@
       font-size: 16px;
     }
 
-    .screening-meta {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin: 20px 0;
-    }
-
-    .screening-meta div {
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.86);
-    }
-
-    .screening-meta strong,
-    .screening-card h3 {
-      display: block;
-      margin-bottom: 5px;
-      color: #8b6448;
-    }
-
-    .screening-meta span {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.55;
-    }
-
-    .screening-groups {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .screening-card {
-      padding: 18px 20px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.82);
-    }
-
-    .screening-card ul {
-      display: grid;
-      gap: 7px;
-      margin: 10px 0 0;
-      padding-left: 20px;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.45;
-    }
-
-    .screening-card.sma {
-      border-color: #d8b86b;
-      background: #fff8e8;
-    }
-
     .closing {
       padding: 74px;
       text-align: center;
@@ -834,12 +778,7 @@
 
       .cover-points,
       .grid,
-      .checklist,
-      .screening-groups {
-        grid-template-columns: 1fr;
-      }
-
-      .screening-meta {
+      .checklist {
         grid-template-columns: 1fr;
       }
 
@@ -1164,10 +1103,30 @@
       <p class="lead">新生兒檢查像是寶寶人生第一張健康地圖。它不是為了讓爸媽緊張，而是幫助我們早一點發現需要追蹤的地方，讓寶寶在最初就被好好守護。</p>
       <div class="steps">
         <div class="step"><strong>出生評估</strong><span>醫護會評估寶寶呼吸、膚色、活動力、體重、身長、頭圍與基本外觀。爸媽可留意醫師是否有特別提醒需追蹤的項目。</span></div>
-        <div class="step"><strong>新生兒篩檢</strong><span>通常會在出生後一定時間採集足跟血，檢查部分先天代謝或內分泌相關疾病。若結果需要複檢，請依通知回診，不要自行解讀為一定有病。</span></div>
+        <div class="step"><strong>新生兒篩檢</strong><span>寶寶出生滿 48 小時後會採集少量足跟血，檢查部分先天代謝或內分泌相關疾病。若結果需要複檢，請依通知回診，不要自行解讀為一定有病。</span></div>
         <div class="step"><strong>聽力篩檢</strong><span>早期發現聽力問題，有助於語言與發展介入。若初篩未通過，依醫院安排複篩或進一步檢查。</span></div>
         <div class="step"><strong>黃疸追蹤</strong><span>醫院會依寶寶出生天數、數值與狀況判斷是否需要照光或回診追蹤。爸媽回家後仍要觀察膚色、吃奶與精神。</span></div>
       </div>
+      <h3>新生兒篩檢，爸媽先記住這 4 件事</h3>
+      <div class="grid">
+        <div class="card sage">
+          <h3>它是出生後的健康檢查</h3>
+          <p>許多代謝或遺傳相關疾病在初期沒有明顯症狀。篩檢的意義，是在寶寶看起來健康時，先把需要追蹤的可能性找出來。</p>
+        </div>
+        <div class="card peach">
+          <h3>目前是 22 項</h3>
+          <p>大家常說的公費「21 項」已於 2026 年 7 月新增 SMA（脊髓性肌肉萎縮症），目前為 22 項篩檢。</p>
+        </div>
+        <div class="card sky">
+          <h3>通知複檢，不等於確診</h3>
+          <p>篩檢結果有異常時，請依院所通知儘快回診確認；先完成後續檢查，比自行猜測或焦慮更重要。</p>
+        </div>
+        <div class="card">
+          <h3>聽力篩檢是另一件事</h3>
+          <p>足跟血篩檢和新生兒聽力篩檢不同。聽力篩檢通常應於出生 3 個月內完成，依醫院安排即可。</p>
+        </div>
+      </div>
+      <div class="notice">想查看完整項目或確認院所流程，可詢問出生醫院，或參考<a href="https://www.hpa.gov.tw/pages/list.aspx?nodeid=201" target="_blank" rel="noopener">國民健康署新生兒篩檢公告</a>。把它當成寶寶出生後的第一道健康守護，不需要把育兒變成一張考卷。</div>
       <h3>回家後每日觀察表</h3>
       <div class="checklist">
         <div class="check">今天喝奶次數與精神狀態</div>
@@ -1178,79 +1137,6 @@
         <div class="check">哭聲是否和平常不同</div>
       </div>
       <div class="notice">若寶寶發燒、呼吸費力、嘴唇發紫、喝奶明顯變差、活動力下降、持續嘔吐、抽搐，或爸媽直覺覺得不對勁，請不要等待，立即聯絡醫療單位。</div>
-    </section>
-
-    <section class="page green">
-      <span class="kicker">Health Guide</span>
-      <div class="chapter-title">
-        <div class="chapter-no">檢</div>
-        <h2>公費新生兒篩檢：22 項一次看懂</h2>
-      </div>
-      <p class="lead">許多人熟悉的是「公費 21 項新生兒篩檢」。不過自 2026 年 7 月 1 日起，公費項目已新增脊髓性肌肉萎縮症（SMA），目前為 22 項。這些疾病在出生初期常沒有明顯症狀，及早發現才能及早追蹤與治療。</p>
-      <div class="screening-meta">
-        <div><strong>什麼時候做？</strong><span>寶寶出生滿 48 小時後，由醫護人員採集少量足跟血。</span></div>
-        <div><strong>誰可以做？</strong><span>新生兒可接受 1 次公費篩檢；現行補助內容為每案 750 元。</span></div>
-        <div><strong>結果有異常怎麼辦？</strong><span>篩檢陽性不等於確診，請依通知儘快回院複檢或進一步確認。</span></div>
-      </div>
-      <div class="screening-groups">
-        <div class="screening-card">
-          <h3>常見代謝、內分泌與血液相關</h3>
-          <ul>
-            <li>葡萄糖-6-磷酸鹽去氫酶缺乏症（G6PD，俗稱蠶豆症）</li>
-            <li>先天性甲狀腺低能症（CHT）</li>
-            <li>先天性腎上腺增生症（CAH）</li>
-            <li>苯酮尿症（PKU）</li>
-            <li>高胱胺酸尿症（HCU）</li>
-            <li>半乳糖血症（GAL）</li>
-          </ul>
-        </div>
-        <div class="screening-card">
-          <h3>胺基酸與有機酸代謝相關</h3>
-          <ul>
-            <li>楓漿尿症（MSUD）</li>
-            <li>異戊酸血症（IVA）</li>
-            <li>甲基丙二酸血症（MMA）</li>
-            <li>戊二酸血症第一型（GA I）</li>
-            <li>早發型戊二酸血症第二型（GA II）</li>
-            <li>丙酸血症（PA）</li>
-          </ul>
-        </div>
-        <div class="screening-card">
-          <h3>尿素循環與生物素代謝相關</h3>
-          <ul>
-            <li>瓜胺酸血症第 I 型（CIT I）</li>
-            <li>瓜胺酸血症第 II 型（CIT II）</li>
-            <li>三羥基三甲基戊二酸尿症（HMG）</li>
-            <li>全羧化酶合成酶缺乏症（HCSD）</li>
-          </ul>
-        </div>
-        <div class="screening-card">
-          <h3>脂肪酸與肉鹼代謝相關</h3>
-          <ul>
-            <li>中鏈醯輔酶 A 去氫酶缺乏症（MCAD）</li>
-            <li>原發性肉鹼缺乏症（PCD）</li>
-            <li>肉鹼棕櫚醯基轉移酶缺乏症第 I 型（CPT I）</li>
-            <li>肉鹼棕櫚醯基轉移酶缺乏症第 II 型（CPT II）</li>
-            <li>極長鏈醯輔酶 A 去氫酶缺乏症（VLCAD）</li>
-          </ul>
-        </div>
-        <div class="screening-card sma">
-          <h3>2026 年新增</h3>
-          <ul>
-            <li>脊髓性肌肉萎縮症（SMA）</li>
-            <li>自 2026 年 7 月 1 日納入公費，使原本 21 項擴增為 22 項。</li>
-          </ul>
-        </div>
-        <div class="screening-card">
-          <h3>爸媽要記得</h3>
-          <ul>
-            <li>這 22 項是足跟血篩檢，與新生兒聽力篩檢是不同服務。</li>
-            <li>若早於 48 小時出院，請向醫院確認補採時間與地點。</li>
-            <li>接到複檢通知時，帶著寶寶依約回診即可，先別急著責怪自己或自行搜尋診斷。</li>
-          </ul>
-        </div>
-      </div>
-      <div class="notice">資料更新：2026 年 7 月。制度與院所流程可能調整，請以出生醫院及<a href="https://www.hpa.gov.tw/pages/list.aspx?nodeid=201" target="_blank" rel="noopener">國民健康署最新公告</a>為準。新生兒聽力篩檢則為另一項公費服務，通常應於出生 3 個月內完成。</div>
     </section>
 
     <section class="page" id="chapter-4">
